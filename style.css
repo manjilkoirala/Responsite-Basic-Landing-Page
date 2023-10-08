@@ -1,0 +1,182 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy-Medium';
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+
+.main{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+nav{
+    height: 100px;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4vw;
+    border-bottom: 2px solid #dadada;
+}
+
+.nav-part2{
+    display: flex;
+    /* background-color: blue; */
+   gap: 4vw;
+   align-items: center;
+}
+nav .logo{
+    font-size: 1.5vw;
+    font-weight: 700;
+}
+
+nav ul li{
+    font-size: 1.1vw;
+    list-style: none;
+    font-weight: 600;
+}
+nav ul i{
+    font-size: 1.6;
+    display: none;
+    font-weight: 800px;
+    
+}
+
+nav button{
+    font-size: 1vw;
+    padding: 0.7vw 1.4vw;
+    font-weight: 600;
+}
+
+ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+.content{
+    height: calc(100% - 100px);
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.left{
+    height: 100%;
+    width: 55%;
+    
+    padding: 5vw 4vw;
+}
+
+.right{
+    height: 100%;
+    width: 45%;
+    
+}
+
+.left h1{
+    font-size: 4.2vw;
+    line-height: 4.4vw;
+}
+.left h1 span{
+    color: #FF735C;
+}
+
+
+.left p{
+    font-size: 1.2vw;
+    font-weight: 600;
+    color: #666;
+    width: 80%;
+    margin-top: 1.5vw;
+    margin-bottom: 3vw;
+}
+
+button{
+    font-size: 1.2vw;
+    padding: 1.3vw 2.3vw;
+    background-color: #FF735C;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+.right img{
+    height: 100%;
+    width: 100%;
+}
+
+/* For Different Device, making responsive */
+
+@media(max-width:600px){
+    nav{
+        padding: 0 6vw;
+        height: 60px;
+    }
+    nav .logo{
+        font-size: 5.1vw;
+    }
+
+    ul li{
+       font-size: 4vw;
+       display: none;
+
+        
+    }
+
+    nav ul i{
+        display: block;
+        font-size: 4.5vw;
+    }
+
+    nav button{
+        display: none;
+    }
+
+    ul li a{
+        color: white;
+       
+    }
+
+    .content{
+        height: calc(100%-60px);
+        flex-direction: column;
+    }
+    .left{
+       width: 100%;
+       height: 45%;
+       padding: 4vw 6vw;
+    }
+    .right{
+        width: 100%;
+        height: 55%;
+    }
+    .left h1{
+        font-size: 10vw;
+        line-height: 11vw;
+    }
+
+    .left p{
+        font-size: 3vw;
+        width: 90%;
+        margin-top: 5vw;
+        margin-bottom: 6vw;
+    }
+
+    .content button{
+        padding: 3vw 6vw;
+        font-size: 3.5vw;
+        border-radius: 3px;
+        font-weight: 600;
+    }
+
+
+}
